@@ -1,0 +1,8 @@
+{
+  "name": "ASP.NET",
+  "dependencies": {},
+  "globalDependencies": {
+    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255",
+    "sse": "file:typings/sse.d.ts"
+  }
+}

@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Import.WebClient</title>
+
+    <environment names="Development">
+        <link rel="stylesheet" href="wwwroot/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="wwwroot/css/site.css" />
+    </environment>
+
+
+    <script src="wwwroot/lib/ng2/es6-shim.js"></script>
+    <script src="wwwroot/lib/ng2/system-polyfills.js"></script>
+    <script src="wwwroot/lib/ng2/angular2-polyfills.js"></script>
+                
+    <script src="wwwroot/lib/ng2/system.src.js"></script>
+    <script src="wwwroot/lib/ng2/rx.js"></script>
+    <script src="wwwroot/lib/ng2/angular2.dev.js"></script>
+                
+    <script src="wwwroot/lib/ng2/router.dev.js"></script>
+
+    <script src="wwwroot/lib/ng2/http.js"></script>
+
+    <script>
+        System.config({
+            //map: {
+            //    'rxjs': 'node_modules/rxjs'
+            //},
+            packages: {
+                'wwwroot': {
+                    defaultExensions: "js"
+                }
+            }
+        });
+
+        System.import("wwwroot/app/boot.js")
+            .then(null, console.error.bind(console));
+
+    </script>
+
+
+    <environment names="Development">
+        <script>
+            //angular.enableProdMode();
+        </script>
+    </environment>
+
+
+    @*@Html.ApplicationInsightsJavaScript(TelemetryConfiguration)*@
+
+</head>
+<body>
+
+    <div class="container body-content">
+   
+        <importer-app></importer-app>
+
+        @RenderBody()
+
+       
+    </div>
+
+    <environment names="Development">
+        <script src="wwwroot/lib/jquery/dist/jquery.js"></script>
+        <script src="wwwroot/lib/bootstrap/dist/js/bootstrap.js"></script>
+    </environment>
+
+
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

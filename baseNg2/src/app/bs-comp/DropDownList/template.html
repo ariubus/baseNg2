@@ -1,0 +1,11 @@
+﻿<div class="dropdown pull-left" >
+    <button class="btn btn-default dropdown-toggle left"  type="button" id="{{componentName}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Choose a value from the list
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+
+        <li *ngFor="let option of data"><a href="#">{{option[nameField]}}</a></li>
+
+    </ul>
+</div>

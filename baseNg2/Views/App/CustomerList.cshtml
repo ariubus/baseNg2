@@ -1,0 +1,75 @@
+﻿<h3 (click)="onHeaderClick()">Customer list [Total :{{appService.customers.length}}]</h3>
+
+
+<div class="row source-options">
+
+    <div class="col col-md-3">
+        <div class="input-group">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-oil"></span></span>
+            <dropdownlist [data]="sources" [nameField]="'displayName'" [valueField]="'id'" [component-id]="'ddl_sources'"
+                          (onValueChanged)="onSourceChanged($event)"></dropdownlist>
+        </div>
+
+    </div>
+    <div class="col-md-1"></div>
+
+    <div class="col col-lg-3 ">
+        <div class="input-group">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-barcode"></span></span>
+            <input type="text" class="form-control" [ngClass]="{disabled: sourceSelected}" placeholder="Csv customer ids" [(ngModel)]="csvCustomers">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="button" [ngClass]="{disabled: sourceSelected}" (click)="onAddClick($event)">Add</button>
+            </span>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+
+    <div class="col col-md-3">
+        <div class="input-group">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-open-file"></span></span>
+            <input type="file" class="form-control" placeholder="CustomerId" [ngClass]="{disabled: sourceSelected}" (change)="onFileChange($event)">
+            <span class="input-group-btn">
+                <button type="submit" class="btn btn-primary" [ngClass]="{disabled: sourceSelected}" (click)="onUploadFileClick($event)">Upload</button>
+            </span>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="row">
+
+
+    <div class="col col-md-3">
+        <div class="input-group">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+            <input type="text" [(ngModel)]="searchExp" class="form-control" [ngClass]="{disabled: sourceSelected}" placeholder="Search in grid">
+            <span class="input-group-btn ">
+                <button type="submit" class="btn btn-primary" [ngClass]="{disabled: sourceSelected}" (click)="onAddClick($event)">Search</button>
+            </span>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+
+    <div class="col col-md-3">
+        <button type="button" class="btn btn-success lead" (click)="onImportClick($event)">Import</button>
+
+    </div>
+
+</div>
+
+
+
+<div class="container-fluid grid">
+
+    <div class="row header">
+        <div *ngFor="let col of gridColumns" class="col-md-{{col.width}}">{{col.header}}</div>
+    </div>
+
+    <div *ngFor="let item of appService.customers | custFilter : searchExp" class="row ">
+        <div *ngFor="let col of gridColumns" class="col-md-{{col.width}}">{{item[col.dataField]}}</div>
+    </div>
+
+</div>
+
