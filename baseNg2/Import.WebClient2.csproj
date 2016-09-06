@@ -199,6 +199,20 @@
     <Content Include="src\app\main.js.map">
       <DependentUpon>main.ts</DependentUpon>
     </Content>
+    <Content Include="wwwroot\app\app.routes.js" />
+    <Content Include="wwwroot\app\boot.js" />
+    <Content Include="wwwroot\app\bs-comp\DropDownList\DropDownList.js" />
+    <Content Include="wwwroot\app\bs-comp\grid.js" />
+    <Content Include="wwwroot\app\Components\About.js" />
+    <Content Include="wwwroot\app\Components\CustomerDetails.js" />
+    <Content Include="wwwroot\app\Components\CustomerList.js" />
+    <Content Include="wwwroot\app\Components\footer.js" />
+    <Content Include="wwwroot\app\Components\topheader.js" />
+    <Content Include="wwwroot\app\main.js" />
+    <Content Include="wwwroot\app\Models\Customer.js" />
+    <Content Include="wwwroot\app\Models\SourceOpt.js" />
+    <Content Include="wwwroot\app\Services\app.service.js" />
+    <Content Include="wwwroot\app\Services\customer.service.js" />
     <Content Include="wwwroot\css\site.css" />
     <Content Include="wwwroot\css\site.min.css">
       <DependentUpon>site.css</DependentUpon>
@@ -385,6 +399,20 @@
     <Content Include="Views\App\TopHeader.cshtml" />
     <Content Include="tsconfig.json" />
     <Content Include="typings.json" />
+    <Content Include="wwwroot\app\app.routes.js.map" />
+    <Content Include="wwwroot\app\boot.js.map" />
+    <Content Include="wwwroot\app\bs-comp\DropDownList\DropDownList.js.map" />
+    <Content Include="wwwroot\app\bs-comp\grid.js.map" />
+    <Content Include="wwwroot\app\Components\About.js.map" />
+    <Content Include="wwwroot\app\Components\CustomerDetails.js.map" />
+    <Content Include="wwwroot\app\Components\CustomerList.js.map" />
+    <Content Include="wwwroot\app\Components\footer.js.map" />
+    <Content Include="wwwroot\app\Components\topheader.js.map" />
+    <Content Include="wwwroot\app\main.js.map" />
+    <Content Include="wwwroot\app\Models\Customer.js.map" />
+    <Content Include="wwwroot\app\Models\SourceOpt.js.map" />
+    <Content Include="wwwroot\app\Services\app.service.js.map" />
+    <Content Include="wwwroot\app\Services\customer.service.js.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
