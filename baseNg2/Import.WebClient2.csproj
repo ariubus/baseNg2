@@ -253,49 +253,21 @@
       <DependentUpon>jquery.js</DependentUpon>
     </Content>
     <Content Include="wwwroot\lib\jquery\MIT-LICENSE.txt" />
-    <Content Include="wwwroot\lib\ng2\angular2-all-testing.umd.dev.js">
-      <DependentUpon>angular2.js</DependentUpon>
-    </Content>
-    <Content Include="wwwroot\lib\ng2\angular2-all.umd.dev.js">
-      <DependentUpon>angular2.js</DependentUpon>
-    </Content>
-    <Content Include="wwwroot\lib\ng2\angular2-all.umd.js">
-      <DependentUpon>angular2.js</DependentUpon>
-    </Content>
-    <Content Include="wwwroot\lib\ng2\angular2-all.umd.min.js">
-      <DependentUpon>angular2.js</DependentUpon>
-    </Content>
-    <Content Include="wwwroot\lib\ng2\angular2-polyfills.js">
-      <DependentUpon>angular2.js</DependentUpon>
-    </Content>
-    <Content Include="wwwroot\lib\ng2\angular2-polyfills.min.js">
-      <DependentUpon>angular2.js</DependentUpon>
-    </Content>
-    <Content Include="wwwroot\lib\ng2\angular2.dev.js">
-      <DependentUpon>angular2.js</DependentUpon>
-    </Content>
-    <Content Include="wwwroot\lib\ng2\angular2.min.js">
-      <DependentUpon>angular2.js</DependentUpon>
-    </Content>
-    <Content Include="wwwroot\lib\ng2\overview.md" />
-    <Content Include="wwwroot\lib\ng2\Rx.min.js.map" />
-    <Content Include="wwwroot\lib\ng2\Rx.umd.min.js.map" />
-    <Content Include="wwwroot\lib\ng2\system-csp-production.js.map" />
-    <Content Include="wwwroot\lib\ng2\system-polyfills.js.map" />
-    <Content Include="wwwroot\lib\ng2\system-register-only.js.map" />
-    <Content Include="wwwroot\lib\ng2\system.js.map" />
-    <Content Include="wwwroot\lib\ng2\testing.dev.js.map" />
-    <None Include="src\_references.js" />
+    <Content Include="wwwroot\lib\ng2\angular2-all-testing.umd.dev.js" />
+    <Content Include="wwwroot\lib\ng2\angular2-all.umd.dev.js" />
+    <Content Include="wwwroot\lib\ng2\angular2-all.umd.js" />
+    <Content Include="wwwroot\lib\ng2\angular2-all.umd.min.js" />
+    <Content Include="wwwroot\lib\ng2\angular2-polyfills.js" />
+    <Content Include="wwwroot\lib\ng2\angular2-polyfills.min.js" />
+    <Content Include="wwwroot\lib\ng2\angular2.dev.js" />
     <Content Include="wwwroot\lib\ng2\angular2.js" />
-    <Content Include="wwwroot\lib\ng2\es6-shim.js" />
+    <Content Include="wwwroot\lib\ng2\angular2.min.js" />
     <Content Include="wwwroot\lib\ng2\http.dev.js" />
     <Content Include="wwwroot\lib\ng2\http.js" />
     <Content Include="wwwroot\lib\ng2\http.min.js" />
     <Content Include="wwwroot\lib\ng2\router.dev.js" />
     <Content Include="wwwroot\lib\ng2\router.js" />
     <Content Include="wwwroot\lib\ng2\router.min.js" />
-    <Content Include="wwwroot\lib\ng2\Rx.js" />
-    <Content Include="wwwroot\lib\ng2\Rx.min.js" />
     <Content Include="wwwroot\lib\ng2\Rx.umd.js" />
     <Content Include="wwwroot\lib\ng2\Rx.umd.min.js" />
     <Content Include="wwwroot\lib\ng2\system-csp-production.js" />
@@ -310,6 +282,7 @@
     <Content Include="wwwroot\lib\ng2\upgrade.dev.js" />
     <Content Include="wwwroot\lib\ng2\upgrade.js" />
     <Content Include="wwwroot\lib\ng2\upgrade.min.js" />
+    <None Include="src\_references.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -385,7 +358,7 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout2.cshtml" />
+    <Content Include="Views\Shared\_Layout_original.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -413,6 +386,13 @@
     <Content Include="wwwroot\app\Models\SourceOpt.js.map" />
     <Content Include="wwwroot\app\Services\app.service.js.map" />
     <Content Include="wwwroot\app\Services\customer.service.js.map" />
+    <Content Include="wwwroot\lib\ng2\overview.md" />
+    <Content Include="wwwroot\lib\ng2\Rx.umd.min.js.map" />
+    <Content Include="wwwroot\lib\ng2\system-csp-production.js.map" />
+    <Content Include="wwwroot\lib\ng2\system-polyfills.js.map" />
+    <Content Include="wwwroot\lib\ng2\system-register-only.js.map" />
+    <Content Include="wwwroot\lib\ng2\system.js.map" />
+    <Content Include="wwwroot\lib\ng2\testing.dev.js.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -13,10 +13,10 @@ var ng2 = ['node_modules/angular2/bundles/*.*',
 
 
 
-gulp.task('lib-copy2', function () {
+gulp.task('Copy-Js-Libraries', function () {
 
     _.forEach(ng2, function (file) {
-        gulp.src(file).pipe(gulp.dest("content/lib/ng2"));
+        gulp.src(file).pipe(gulp.dest("wwwroot/lib/ng2"));
     });
 
 });
