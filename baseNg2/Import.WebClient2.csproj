@@ -262,12 +262,15 @@
     <Content Include="wwwroot\lib\ng2\angular2.dev.js" />
     <Content Include="wwwroot\lib\ng2\angular2.js" />
     <Content Include="wwwroot\lib\ng2\angular2.min.js" />
+    <Content Include="wwwroot\lib\ng2\es6-shim.js" />
     <Content Include="wwwroot\lib\ng2\http.dev.js" />
     <Content Include="wwwroot\lib\ng2\http.js" />
     <Content Include="wwwroot\lib\ng2\http.min.js" />
     <Content Include="wwwroot\lib\ng2\router.dev.js" />
     <Content Include="wwwroot\lib\ng2\router.js" />
     <Content Include="wwwroot\lib\ng2\router.min.js" />
+    <Content Include="wwwroot\lib\ng2\Rx.js" />
+    <Content Include="wwwroot\lib\ng2\Rx.min.js" />
     <Content Include="wwwroot\lib\ng2\Rx.umd.js" />
     <Content Include="wwwroot\lib\ng2\Rx.umd.min.js" />
     <Content Include="wwwroot\lib\ng2\system-csp-production.js" />
@@ -282,6 +285,7 @@
     <Content Include="wwwroot\lib\ng2\upgrade.dev.js" />
     <Content Include="wwwroot\lib\ng2\upgrade.js" />
     <Content Include="wwwroot\lib\ng2\upgrade.min.js" />
+    <Content Include="package.json" />
     <None Include="src\_references.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -294,7 +298,6 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="package.json" />
     <Content Include="src\app\Components\About.js.map">
       <DependentUpon>About.js</DependentUpon>
     </Content>
@@ -393,6 +396,7 @@
     <Content Include="wwwroot\lib\ng2\system-register-only.js.map" />
     <Content Include="wwwroot\lib\ng2\system.js.map" />
     <Content Include="wwwroot\lib\ng2\testing.dev.js.map" />
+    <Content Include="wwwroot\lib\ng2\Rx.min.js.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
